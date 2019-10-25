@@ -5,10 +5,11 @@ from Docker import Docker, os
 network = "py_net"
 
 dict_options = {
-#    "u18p3": f" -i --net={network} ",
-#    "u18p3pip": f" -i --net={network} ",
-#    "u18p37": f" -i --net={network} ",
+    "u18p3": f" -i --net={network} ",
+    "u18p3pip": f" -i --net={network} ",
+    "u18p37": f" -i --net={network} ",
     "u18p37pip": f" -i --net={network} ",
+    "c7p3": f" -i --net={network} ",
 }
 
 container = Docker(list(dict_options.keys()), network, dict_options)
